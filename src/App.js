@@ -30,13 +30,13 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = '#042743';
       showAlert(" Dark Mode has been enabled","success")
-      document.title= `Textutils - Dark mode`;
+      // document.title= `Textutils - Dark mode`;
      }
      else{
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert(" Light Mode has been enabled","success")
-      document.title=`Textutils - Light mode`;
+      // document.title=`Textutils - Light mode`;
       //-----To blink the title bar content used below technique ---
       // setInterval(() => {
       //   document.title=`Textutils is a amazing site`;
@@ -62,7 +62,7 @@ function App() {
             <About mode={mode}/>
           </Route>
           <Route exact path="/">
-            <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>
+            <TextForm showAlert={showAlert} heading="Try TextUtils-Word Counter, Character Counter, Remove Extra Spaces" mode={mode}/>
           </Route>
   </Switch>
   </div>
